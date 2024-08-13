@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { YearRelease } from "./components/yearRelease"
+import { EditionRelease } from "./components/editionRelease/editionRelease"
 export function App() {
-  const [year, setYear] = useState(0)
+  const [edition, setEdition] = useState(0)
   return (
     <>
       <div className="p-10 bg-white grid grid-cols-12 grid-rows-10 gap-2 flex-row">
@@ -13,105 +13,105 @@ export function App() {
             <li className="m-5 text-1xl font-bold">
               <button
                 onClick={() =>
-                  setYear(2024)
+                  setEdition(11)
                 }>
-                2024
+                11a Edição
               </button>
             </li>
             <li className="m-5 text-1xl font-bold">
               <button
                 onClick={() =>
-                  setYear(2023)
+                  setEdition(10)
                 }>
-                2023
+                10a Edição
               </button>
             </li>
             <li className="m-5 text-1xl font-bold">
               <button
                 onClick={() =>
-                  setYear(2022)
+                  setEdition(9)
                 }>
-                2022
+                9a Edição
               </button>
             </li>
             <li className="m-5 text-1xl font-bold">
               <button
                 onClick={() =>
-                  setYear(2021)
+                  setEdition(8)
                 }>
-                2021
+                8a Edição
               </button>
             </li>
             <li className="m-5 text-1xl font-bold">
               <button
                 onClick={() =>
-                  setYear(2020)
+                  setEdition(7)
                 }>
-                2020
+                7a Edição
               </button>
             </li>
             <li className="m-5 text-1xl font-bold">
               <button
                 onClick={() =>
-                  setYear(2019)
+                  setEdition(6)
                 }>
-                2019
+                6a Edição
               </button>
             </li>
             <li className="m-5 text-1xl font-bold">
               <button
                 onClick={() =>
-                  setYear(2018)
+                  setEdition(5)
                 }>
-                2018
+                5a Edição
               </button>
             </li>
             <li className="m-5 text-1xl font-bold">
               <button
                 onClick={() =>
-                  setYear(2017)
+                  setEdition(4)
                 }>
-                2017
+                4a Edição
               </button>
             </li>
             <li className="m-5 text-1xl font-bold">
               <button
                 onClick={() =>
-                  setYear(2016)
+                  setEdition(3)
                 }>
-                2016
+                3a Edição
               </button>
             </li>
             <li className="m-5 text-1xl font-bold">
               <button
                 onClick={() =>
-                  setYear(2015)
+                  setEdition(2)
                 }>
-                2015
+                2a Edição
               </button>
             </li>
             <li className="m-5 text-1xl font-bold">
               <button
                 onClick={() =>
-                  setYear(2014)
+                  setEdition(1)
                 }>
-                2014
+                1a Edição
               </button>
             </li>
           </ol>
         </div>
         <div className="h-full row-span-5 col-span-11 bg-cyan-200 p-5">
-          {year === 2024 && <YearRelease year="2024" />}
-          {year === 2023 && <YearRelease year="2023" />}
-          {year === 2022 && <YearRelease year="2022" />}
-          {year === 2021 && <YearRelease year="2021" />}
-          {year === 2020 && <YearRelease year="2020" />}
-          {year === 2019 && <YearRelease year="2019" />}
-          {year === 2018 && <YearRelease year="2018" />}
-          {year === 2017 && <YearRelease year="2017" />}
-          {year === 2016 && <YearRelease year="2016" />}
-          {year === 2015 && <YearRelease year="2015" />}
-          {year === 2014 && <YearRelease year="2014" />}
+          {edition === 11 && <EditionRelease year="11" />}
+          {edition === 10 && <EditionRelease year="10" />}
+          {edition === 9 && <EditionRelease year="9" />}
+          {edition === 8 && <EditionRelease year="8" />}
+          {edition === 7 && <EditionRelease year="7" />}
+          {edition === 6 && <EditionRelease year="6" />}
+          {edition === 5 && <EditionRelease year="5" />}
+          {edition === 4 && <EditionRelease year="4" />}
+          {edition === 3 && <EditionRelease year="3" />}
+          {edition === 2 && <EditionRelease year="2" />}
+          {edition === 1 && <EditionRelease year="1" />}
         </div>
       </div>
     </>
